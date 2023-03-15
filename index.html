@@ -9,60 +9,100 @@
 </head>
 <body>
 <header>
+    <nav>nav
+        <div class="block">
+    <div class="educ"><a href="#Education">Education</a></div>
+    <div class="exp"><a href="#Experience">Experience</a></div>
+    <div class="sklls"><a href="#Skills">Skills</a></div>
+    <div class="int"><a href="#Interests">Interests</a></div>
+        </div>
+</nav>
     <div class="png">
         <img src="./Images/koketso-small.jpg" alt="my-profile-image" class="pro-img">
     </div>
     <div class="identity">
         <div class="name"><h1>Koketso Bogopane</h1></div>
+        <br>
+        <div class="title"><h3>WEB DEVELOPER</h3></div>
+        <br>
         <div class="intro-st">Aspiring student studying sofware engineering with passion and ambition.</div>
+        <br>
     </div>
 </header>
    <div class="content">
+    <div class="box1">
     <div class="education">
-        <p><h2>Education</h2></p>
+        <p><h2 id="Education">Education</h2></p><hr>
+        <br>
         <p><h3>National Senior Certificate</h3></p>
+        <p><h4>FEB 15 2021</h4></p>
+        <br>
         Acquired certificate at President Mangope Technical High school.
     </div>
     <div class="experience">
-        <p><h2>Experence</h2></p>
+        <p><h2 id="Experience">Experience</h2></p><hr>
+        <br>
+        <p><h4><a href="https://www.shoprite.co.za/about-us" target="_blank" >SHOPRITE</a></h4></p>
         <p><h3>Liqour store General assistant</h3></p>
+        <br>
         I was responsible for the store shelves, gravity fridges and the freezer. In this position I had to also interact with a lot of people of different origins and deliver courteous customer service.
    </div> 
    <div class="skills">
-        <p><h2>Skills</h2></p>
-        Krita graphic editor 
+     <ul class="skills">
+        <p><h2 id="Skills">Skills</h2></p><hr>
+        <br>
+        <li><a href="https://krita.org/en/#">Krita</a> graphic editor: Illustration</li>
+     </ul> 
+   </div>
+   <div class="interests">
+     <ul class="interests">
+        <p><h2 id="Interests">Interests</h2></p>
+        <br>
+        <li>Anime</li>
+        <li>Sketching</li>
+        <li>Digital drawing</li>
+        <li>Dogs </li>
+      </ul>
+   </div>
    </div>
    <footer>
     <div class="personalinfo">
-        <p><h2>Personal Contacts</h2></p>
-        <p>065 954 3838</p>
-        <p>koketsobogopanenov24@gmail.com</p>
+        <p><h2>Personal Contacts</h2></p><hr>
+        <div class="call">
+        <p><a href="tel:0659543838" target="_blank"><img src="/Images/smart-phone.png"></a></p>
+        </div>
+        <div class="mail">
+        <p><a href="mailto:koketsobogopanenov24@gmail.com" target="_blank"><img src="/Images/mail.png"></a></p>
+        </div>
+        <div class="linkedin">
+        <p><a href="https://www.linkedin.com/in/koketso-bogopane-2050b926a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BqefJX%2FgmRdCh1b34B%2BFkGQ%3D%3D" target="_blank"><img src="/Images/linkedin.png"></a></p>
+        </div>
+
         
     </div>
     <div class="userform">
-
         <form action="https://formsubmit.co/your@email.com" method="post"> 
-            <p><h2>User form</h2></p>
-            <div>
+            <p><h2>User form</h2></p><hr>
+            <br>
             <label for="username">Name:</label>
             <input type="text" id="name" name="username" required>
-            </div>
             <br>
-            <div> 
+            <div class="usergender">
+                <input type="radio" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
             <label for="usermail">Mail:</label>
             <input type="text" id="mail" name="usermail" required>
-            </div>
             <br>
-            <div>
             <label for="usercomment">Comment:</label>
-            <textarea name="usercomment" id="cmmnt" cols="9" rows="6"></textarea>
-            </div>
+            <textarea name="usercomment" id="cmmnt" cols="20" rows="6"></textarea>
             <br>
-            <div>
-            <input type="submit">
+            <button type="submit">SEND</button>
             </form>
             </div>
-    </div>
    </footer>
+</div>
 </body>
 </html>

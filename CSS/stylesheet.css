@@ -1,64 +1,177 @@
-* { font-size: small;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: rgb(91, 91, 91);
+}
+h4 {
+    color: rgb(66, 66, 66);
 }
 body {
-    width:fit-content;
-    
+    box-sizing: border-box;
+    display: grid;
+    font-family: monospace,sans-serif;
+    background: url(https://images.unsplash.com/photo-1567201864585-6baec9110dac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
 }
 header {
-    background: url(https://plus.unsplash.com/premium_photo-1673137880762-46320e8b8e16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80);
+    background: url(https://images.unsplash.com/photo-1491947153227-33d59da6c448?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
     background-size: cover;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-.identity {
-    display: flex;
-    flex-direction: column;
+    background-color: rgb(140, 140, 140);
+    padding: 10px;
     text-align: center;
-    padding-top: 10px;
 }
 .pro-img {
-    position: relative;
-    top: 10px;
-    left: 20px;
-    max-width: 150px;
-    filter: drop-shadow(5px 8px 4px 
-    #ffffff);
     border: solid 3px #ffffff;
     border-radius: 25px;
+    max-width: 150px; 
+    filter: drop-shadow(20px 20px 20px black); 
+}
+.png {
+    padding-bottom: 20px;
+}
 
+.identity 
+.content {
+    padding: 10px;
+}
+.box1 {
+    padding: 10px;
+    text-align: center;
 }
 .education {
-    padding-left: 50px;
+    padding: 10px;
 }
 .experience {
-    padding-left: 50px;
+    padding: 10px;
 }
 .skills {
-    padding-left: 50px;
+    padding: 10px;
+    list-style: none;
+}
+.interests {
+    padding: 10px;
+    list-style-type: none;
 }
 footer {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    background-color: rgb(224, 224, 224);
-    width: 100%;
-    margin-right: 0;
-    background-size: cover;
-    border-radius: 30px 30px 0px 0px;
-    padding-bottom: 10px;
-    max-height: fit-content;
-    margin-top: 5px;
-    margin-bottom: -10px;
-} 
-.personalinfo {
-    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: rgba(95, 95, 95, 0.378);
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px 25px 0px 0px;
+}
+footer:hover {
+    background-color: rgb(95, 95, 95);
+    filter: drop-shadow(15px 15px 15px);
+}
+.call, .mail, .linkedin {
+    padding: 10px;
 }  
+
+.call:hover, .mail:hover, .linkedin:hover {
+    background-color: #ffffff80;
+    filter: drop-shadow(20px 20px 20px #ffffff);
+}
+.personalinfo {
+    padding: 10px;
+}
+.userform {
+    padding: 10px;
+}
+nav {
+    display:inline-block;
+    color:#ffffff;
+    position: fixed;
+    right: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: fit-content;
+    background-color: rgb(32, 30, 30);
+    padding: 10px;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 10px;
+    opacity: 25%;
+}
+.block {
+    display: none;
+}
+nav:hover {
+    opacity: 100%;
+    filter: drop-shadow(10px 10px 10px black);
+}
+nav:hover .block {
+    display: block;
+}
+.educ {
+    box-sizing: border-box;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.exp {
+    box-sizing: border-box;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.sklls {
+    box-sizing: border-box;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.int {
+    box-sizing: border-box;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 5px;
+}
+label {
+    display: block;
+    padding: 10px;
+}
+input {
+    background-color: rgb(130, 130, 130);
+    border: 0;
+    border-radius: 10px;
+    padding: 5px;
+} 
+textarea {
+    background-color: rgb(130, 130, 130);
+    border: 0;
+    border-radius: 10px;
+    padding: 5px;
+}
+button {
+    padding: 10px;
+    color: #ffffff;
+    background-color: black;
+    border: 0;
+    border-radius: 25px;
+}
+.usergender {
+    display: inline-flex;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 426px) {
+        .content {
+            display: flex;flex-direction: row-reverse;
+        }
+        .box1 {
+            flex: 2;
+        }
+        footer {
+            flex: 1;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            border-radius: 0px 30px 30px 0px;
+        }
+        
+
+}
 
 
 
