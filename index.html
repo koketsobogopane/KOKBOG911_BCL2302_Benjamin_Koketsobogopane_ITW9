@@ -17,9 +17,15 @@
     <div class="int"><a href="#Interests">Interests</a></div>
         </div>
 </nav>
-    <div class="png">
+
+    <picture>
+        <source  media=
+        "(min-width: 600px)" srcset="Images\koketso-small-1.jpg">
+        <source  media=
+        "(max-width: 1000px)" srcset="Images\koketso-small.jpg">
         <img src="./Images/koketso-small.jpg" alt="my-profile-image" class="pro-img">
-    </div>
+    </picture>
+
     <div class="identity">
         <div class="name"><h1>Koketso Bogopane</h1></div>
         <br>
@@ -82,7 +88,7 @@
     </div>
     <div class="userform">
         <form action="https://formsubmit.co/your@email.com" method="post"> 
-            <p><h2>User form</h2></p><hr>
+            <p><h2>Contact Me</h2></p><hr>
             <br>
             <label for="username">Name:</label>
             <input type="text" id="name" name="username" required>
